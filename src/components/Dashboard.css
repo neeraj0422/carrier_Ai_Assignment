@@ -1,0 +1,86 @@
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .h1{
+    color: white;
+  }
+  .heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+  
+  /* Account Information styles */
+  .account-info {
+    margin-bottom: 40px;
+  }
+  
+  .account-info h2 {
+    color: azure;
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .account-info pre {
+    background-color: #f5f534;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Positions styles */
+  .positions {
+    margin-bottom: 40px;
+  }
+  
+  .positions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: azure;
+  }
+  
+  .positions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .positions li {
+    background-color: #f5f534;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Trading Signals styles */
+  .trading-signals {
+    margin-bottom: 40px;
+    background-color: #f5f534;
+  }
+  
+  .trading-signals h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(17, 18, 18);
+  }
+  
+  .trading-signals ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .trading-signals li {
+    color: rgb(21, 21, 21);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  .dashboard-bg {
+    background-image: url('dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
