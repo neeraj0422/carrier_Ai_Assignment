@@ -63,7 +63,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-bg">
-        <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/dashboard.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+        <div >
     <div className="container">
       <h1 className="heading">Dashboard</h1>
       <div className="account-info">

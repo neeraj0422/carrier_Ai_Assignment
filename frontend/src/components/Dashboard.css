@@ -19,7 +19,7 @@
   }
   
   .account-info h2 {
-    color: azure;
+    
     font-size: 24px;
     margin-bottom: 10px;
     
@@ -39,7 +39,7 @@
   .positions h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: azure;
+  
   }
   
   .positions ul {
@@ -76,11 +76,4 @@
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
-  }
-  .dashboard-bg {
-    background-image: url('dashboard.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.1);
   }

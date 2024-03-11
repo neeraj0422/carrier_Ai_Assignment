@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true); // Track whether login or signup form is active
 
@@ -62,77 +63,69 @@ const Login = () => {
   
 
   return (
-    <div style={{
-      backgroundImage: `url('/trading.jpg')`, // Assuming the image is named 'trading.jpg' and located in the same directory as the login component
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      minHeight: '100vh',
-    }}>
-      <div >
-      <h1>{isLogin ? 'Login' : 'Signup'}</h1>
-      <form onSubmit={handleSubmit}>
-        {!isLogin && (
-          <div>
-            <label htmlFor="username">Username:</label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
-            />
-          </div>
-        )}
+    <div >
+    <h1>{isLogin ? 'Login' : 'Signup'}</h1>
+    <form onSubmit={handleSubmit}>
+      {!isLogin && (
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="username">Username:</label>
           <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            type="text"
+            id="username"
+            name="username"
+            value={formData.username}
             onChange={handleChange}
           />
         </div>
+      )}
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+      </div>
+      {!isLogin && (
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="brokerApiKey">Broker API Key:</label>
           <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
+            type="text"
+            id="brokerApiKey"
+            name="brokerApiKey"
+            value={formData.brokerApiKey}
             onChange={handleChange}
           />
         </div>
-        {!isLogin && (
-          <div>
-            <label htmlFor="brokerApiKey">Broker API Key:</label>
-            <input
-              type="text"
-              id="brokerApiKey"
-              name="brokerApiKey"
-              value={formData.brokerApiKey}
-              onChange={handleChange}
-            />
-          </div>
-        )}
-        {!isLogin && (
-          <div>
-            <label htmlFor="brokerApiSecret">Broker API Secret:</label>
-            <input
-              type="text"
-              id="brokerApiSecret"
-              name="brokerApiSecret"
-              value={formData.brokerApiSecret}
-              onChange={handleChange}
-            />
-          </div>
-        )}
-        <button type="submit">{isLogin ? 'Login' : 'Signup'}</button>
-      </form>
-      <button onClick={handleToggle}>{isLogin ? 'Switch to Signup' : 'Switch to Login'}</button>
-    </div>
-
-    </div>  );
+      )}
+      {!isLogin && (
+        <div>
+          <label htmlFor="brokerApiSecret">Broker API Secret:</label>
+          <input
+            type="text"
+            id="brokerApiSecret"
+            name="brokerApiSecret"
+            value={formData.brokerApiSecret}
+            onChange={handleChange}
+          />
+        </div>
+      )}
+      <button type="submit">{isLogin ? 'Login' : 'Signup'}</button>
+    </form>
+    <button onClick={handleToggle}>{isLogin ? 'Switch to Signup' : 'Switch to Login'}</button>
+  </div>);
 };
 
 export default Login;
